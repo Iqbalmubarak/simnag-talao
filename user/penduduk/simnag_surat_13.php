@@ -86,17 +86,7 @@ $sqlqueryresult2 = mysqli_query($connection,$sqlquery2);
 </style>
 
 <body class="theme-blush">
-    <?php                           
-	foreach ($sqlqueryresult2 as $key) {
-		$s_date = $key['s_date'];
-		$p_kk = $key['p_kk'];
-		$p_nik = $key['p_nik'];
-		$p_name = $key['p_name'];
-		$p_l_tanggal = $key['p_l_tanggal'];
-		$p_l_tempat = $key['p_l_tempat'];
-		$p_hub = $key['p_hub'];
-}
-  ?>
+    
 
   <!-- Page Loader -->
   <div class="page-loader-wrapper">
@@ -624,6 +614,15 @@ $sqlqueryresult2 = mysqli_query($connection,$sqlquery2);
                               <th class="table-border">NIK</th>
                               <th class="table-border">TEMPAT/TANGGAL LAHIR</th>
                               <th class="table-border">HUBUNGAN KELUARGA</th>
+                              <?php                           
+	foreach ($sqlqueryresult2 as $key) {
+		$p_kk = $key['p_kk'];
+		$p_nik = $key['p_nik'];
+		$p_name = $key['p_name'];
+		$p_l_tanggal = $key['p_l_tanggal'];
+		$p_l_tempat = $key['p_l_tempat'];
+		$p_hub = $key['p_hub'];
+  ?>
                               <tr class="table-border">
                                 <td>
                                   <center>1.</center>
@@ -641,7 +640,7 @@ $sqlqueryresult2 = mysqli_query($connection,$sqlquery2);
                                   <center><?php echo $p_hub ; ?></center>
                                 </td>
                               </tr>
-                
+                <?php } ?>
                             </table>
                             
                             <br>

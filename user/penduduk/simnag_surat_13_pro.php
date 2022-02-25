@@ -18,13 +18,12 @@ $result3 = mysqli_query($connection,$query3);
 	s_p_pek,
 	s_filepath,
 	s_p_alamat,
-  s_p_nik,
-  s_p_tanggal_l,
-  s_p_tempat_l,
-  s_p_kelamin,
-  s_p_agama,
-  s_p_status ) 
-  
+	s_p_nik,
+	s_p_tanggal_l,
+	s_p_tempat_l,
+	s_p_kelamin,
+	s_p_agama,
+	s_p_status ) 
 
 	VALUES 
 

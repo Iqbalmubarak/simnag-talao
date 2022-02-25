@@ -4,7 +4,6 @@ include('ifnotloginadmin.php');
 require_once('db_connect.php');
 // require_once('library.php');
 
-
 $ad_email = $_SESSION['ad_email'];
 $sqlquery = "SELECT * FROM admin
 WHERE ad_email='$ad_email' ";
@@ -19,8 +18,8 @@ $surat = $connection ->query($sqlsurat);
 
 $p_kk = $_SESSION['p_kk'];
 
-$sqlquery2 = "SELECT * FROM penduduk WHERE p_kk='".$p_kk."' AND NOT p_nik2='$p_nik2' ";
-$sqlqueryresult3 = mysqli_query($connection,$sqlquery2);
+
+
 
 ?>
 <!DOCTYPE html>
@@ -98,7 +97,6 @@ $sqlqueryresult3 = mysqli_query($connection,$sqlquery2);
 
 		$s_id = $key['s_id'];
 		$s_status = $key['s_status'];
-		$s_date = $key['s_date'];
 		$s_p_kk = $key['s_p_kk'];
 		$s_p_nik = $key['s_p_nik'];
 
@@ -113,11 +111,15 @@ $sqlqueryresult3 = mysqli_query($connection,$sqlquery2);
 		$s_p_pek = $key['s_p_pek'];
 		$s_p_alamat = $key['s_p_alamat'];
 	}
+
   $sql4 = "SELECT * FROM surat_waris WHERE surat_id='$s_id'";
   $result6 = $connection ->query ($sql4);
   while ($key=$result6 -> fetch_assoc()) {
     $s13_kewarganegaraan = $key['s13_kewarganegaraan'];
 }
+
+$sqlquery3 = "SELECT * FROM penduduk WHERE p_kk='".$p_kk."' AND NOT p_nik='$s_p_nik' ";
+$sqlqueryresult3 = mysqli_query($connection,$sqlquery3);
 
 $p_jabatan=NULL;
 $p_nama=NULL;
@@ -128,22 +130,11 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
     $p_jabatan = $key['jabatan'];
 }
   ?>
-  <?php                           
-	foreach ($sqlqueryresult2 as $key) {
-		$s_date = $key['s_date'];
-		$p_kk = $key['p_kk'];
-		$p_nik = $key['p_nik'];
-		$p_name = $key['p_name'];
-		$p_l_tanggal = $key['p_l_tanggal'];
-		$p_l_tempat = $key['p_l_tempat'];
-		$p_hub = $key['p_hub'];
-}
-  ?>
-
+  
   <center>
     <table>
       <tr>
-        <td><img src="../assets/images/logo_solsel.png" width="90" height="90"></td>
+        <td><img src="assets/logo.png" width="90" height="90"></td>
         <td>
           <center>
             <font size="5">PEMERINTAH KABUPATEN SOLOK SELATAN</font><br>
@@ -211,8 +202,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
         <td width="0"></td>
         <td width="150">Nama Lengkap</td>
         <td>:</td>
-        <td><input class="form-control col-sm-5" type="text" id="s_p_name" name="s_p_name"
-            value="<?php echo $p_name ; ?>" readonly></td>
+        <td> <?php echo $s_p_name; ?></td>
       </tr>
       <tr class="text2">
         <td width="0"></td>
@@ -230,8 +220,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
         <td width="180"></td>
         <td>NIK</td>
         <td>:</td>
-        <td width="525"><input class="form-control col-sm-5" type="text" id="s_p_nik" name="s_p_nik"
-            value="<?php echo $p_nik ; ?>" readonly></td>
+        <td width="525"> <?php echo $s_p_nik; ?></td>
       </tr>
       <tr class="text2">
         <td width="0"></td>
@@ -249,8 +238,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
         <td width="180"></td>
         <td>Tempat lahir</td>
         <td>:</td>
-        <td width="525"><input class="form-control col-sm-5" type="text" id="s_p_tempat_l" name="s_p_tempat_l"
-            value="<?php echo $p_l_tempat ; ?>" readonly></td>
+        <td width="525"> <?php echo $s_p_tempat_l; ?></td>
       </tr>
       <tr class="text2">
         <td width="0"></td>
@@ -268,8 +256,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
         <td width="180"></td>
         <td>Tanggal lahir</td>
         <td>:</td>
-        <td width="525"><input class="form-control col-sm-5" type="text" id="s_p_tanggal_l" name="s_p_tanggal_l"
-            value="<?php echo $p_l_tanggal ; ?>" readonly></td>
+        <td width="525"> <?php echo $s_p_tanggal_l; ?></td>
       </tr>
       <tr class="text2">
         <td width="0"></td>
@@ -287,8 +274,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
         <td width="180"></td>
         <td>Jenis Kelamin</td>
         <td>:</td>
-        <td width="525"><input class="form-control col-sm-5" type="text" id="s_p_kelamin" name="s_p_kelamin"
-            value="<?php echo $kelamin ; ?>" readonly></td>
+        <td width="525"> <?php echo $s_p_kelamin; ?></td>
       </tr>
       <tr class="text2">
         <td width="0"></td>
@@ -306,8 +292,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
         <td width="180"></td>
         <td>Kewarganegaraan</td>
         <td>:</td>
-        <td width="525"> <input class="form-control col-sm-5" type="text" id="s13_kewarganegaraan"
-            name="s13_kewarganegaraan"></td>
+        <td width="525"> <?php echo $s13_kewarganegaraan; ?></td>
       </tr>
       <tr class="text2">
         <td width="0"></td>
@@ -325,8 +310,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
         <td width="180"></td>
         <td>Agama</td>
         <td>:</td>
-        <td width="525"><input class="form-control col-sm-5" type="text" id="s_p_agama" name="s_p_agama"
-            value="<?php echo $agama ; ?>" readonly></td>
+        <td width="525"> <?php echo $s_p_agama; ?></td>
       </tr>
       <tr class="text2">
         <td width="0"></td>
@@ -344,15 +328,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
         <td width="180"></td>
         <td>Status</td>
         <td>:</td>
-        <td width="525"><select class="form-control col-sm-5 show-tick ms select2" id="s_p_status" name="s_p_status"
-            data-placeholder="Select">
-
-
-            <option>Sudah Kawin</option>
-            <option>Belum Kawin</option>
-
-
-          </select></td>
+        <td width="525"> <?php echo $s_p_status; ?></td>
       </tr>
       <tr class="text2">
         <td width="0"></td>
@@ -370,8 +346,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
         <td width="180"></td>
         <td>Pekerjaan</td>
         <td>:</td>
-        <td width="525"> <input class="form-control col-sm-5" type="text" id="s_p_pek" name="s_p_pek"
-            value="<?php echo $pek ; ?>" readonly></td>
+        <td width="525">  <?php echo $s_p_pek; ?></td>
       </tr>
       <tr class="text2">
         <td width="0"></td>
@@ -389,8 +364,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
         <td width="180"></td>
         <td>Alamat</td>
         <td>:</td>
-        <td width="525"><input class="form-control col-sm-5" type="text" id="s_p_alamat" name="s_p_alamat"
-            value="<?php echo $p_alamat ; ?>" readonly></td>
+        <td width="525">  <?php echo $s_p_alamat; ?></td>
       </tr>
     </table>
     <!-- Database -->
@@ -411,6 +385,18 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
       <th class="table-border">TEMPAT/TANGGAL LAHIR</th>
       <th class="table-border">HUBUNGAN KELUARGA</th>
       <tr class="table-border">
+        <?php
+          foreach ($sqlqueryresult3 as $key) {
+            $p_kk = $key['p_kk'];
+            $p_nik = $key['p_nik'];
+            $p_name = $key['p_name'];
+            $p_l_tanggal = $key['p_l_tanggal'];
+            $p_l_tempat = $key['p_l_tempat'];
+            $p_hub = $key['p_hub'];
+            $agama = $key['agama'];
+            $pek = $key['pek'];
+            ?>
+        
         <td>
           <center>1.</center>
         </td>
@@ -418,7 +404,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
           <center><?php echo $p_name ; ?></center>
         </td>
         <td>
-          <center><?php echo $p_nik ; ?></center>
+          <center><?php echo $p_nik; ?></center>
         </td>
         <td>
           <center><?php echo $p_l_tempat ; ?> / <?php echo $p_l_tanggal ; ?></center>
@@ -427,6 +413,7 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
           <center><?php echo $p_hub ; ?></center>
         </td>
       </tr>
+      <?php } ?>
 
     </table>
 
@@ -443,8 +430,8 @@ $sql5 = "SELECT * FROM surat_ttd INNER JOIN penandatangan ON surat_ttd.ttd_id=pe
       <tr>
         <td width="400"><br><br><br><br></td>
         <td class="text" align="center">
-          a.n Pj Wali Nagari Talao Sungai Kunyit <br>Sekretaris Nagari
-          <br><br><br><br><br><b><u>AFRIWES, M.Pd.I</u></b>
+          a.n Pj Wali Nagari Talao Sungai Kunyit <br><?php if($p_jabatan!=NULL){ echo $p_jabatan ;} ?>
+          <br><br><br><br><br><b><u><?php if($p_nama!=NULL){ echo $p_nama ;} ?></u></b>
         </td>
       </tr>
     </table>

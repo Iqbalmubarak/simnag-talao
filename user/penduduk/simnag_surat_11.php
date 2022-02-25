@@ -471,7 +471,8 @@ $umur = hitung_umur($p_l_tanggal);
                                 <tr>
                                   <td>11. Nama Istri atau Suami Terdahulu</td>
                                   <td>:</td>
-                                  <td width="525">-</td>
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_terdahulu"
+                                      name="s11_terdahulu"></td>
                                 </tr>
                               </table>
                               <!-- Database -->
@@ -487,49 +488,49 @@ $umur = hitung_umur($p_l_tanggal);
                                 <tr class="text2">
                                   <td width="500">Nama Lengkap dan Alias</td>
                                   <td>:</td>
-                                  <td> <input class="form-control col-sm-8" type="txt" id="s11_nama2" name="s11_nama2">
+                                  <td> <input class="form-control col-sm-8" type="text" id="s11_nama2" name="s11_nama2">
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>Nomor Induk Kependudukan (NIK)</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_nik2"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_nik2"
                                       name="s11_nik2"></td>
                                 </tr>
                                 <tr>
                                   <td>Tempat Lahir</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_tempat2"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_tempat2"
                                       name="s11_tempat2"></td>
                                 </tr>
                                 <tr>
                                   <td>Tanggal Lahir</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_tanggal2"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_tanggal2"
                                       name="s11_tanggal2"></td>
                                 </tr>
                                 <tr>
                                   <td>Kewarganegaraan</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt"
+                                  <td width="525"><input class="form-control col-sm-8" type="text"
                                       id="s11_kewarganegaraan2" name="s11_kewarganegaraan2"></td>
                                 </tr>
                                 <tr>
                                   <td>Agama</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_agama2"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_agama2"
                                       name="s11_agama2"></td>
                                 </tr>
                                 <tr>
                                   <td>Pekerjaan</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_pekerjaan2"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_pekerjaan2"
                                       name="s11_pekerjaan2"></td>
                                 </tr>
                                 <tr>
                                   <td>Alamat</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_alamat2"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_alamat2"
                                       name="s11_alamat2"></td>
                                 </tr>
                               </table>
@@ -544,49 +545,49 @@ $umur = hitung_umur($p_l_tanggal);
                                 <tr class="text2">
                                   <td width="500">Nama Lengkap dan Alias</td>
                                   <td>:</td>
-                                  <td> <input class="form-control col-sm-8" type="txt" id="s11_nama3" name="s11_nama3">
+                                  <td> <input class="form-control col-sm-8" type="text" id="s11_nama3" name="s11_nama3">
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>Nomor Induk Kependudukan (NIK)</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_nik3"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_nik3"
                                       name="s11_nik3"></td>
                                 </tr>
                                 <tr>
                                   <td>Tempat Lahir</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_tempat3"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_tempat3"
                                       name="s11_tempat3"></td>
                                 </tr>
                                 <tr>
                                   <td>Tanggal Lahir</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_tanggal3"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_tanggal3"
                                       name="s11_tanggal3"></td>
                                 </tr>
                                 <tr>
                                   <td>Kewarganegaraan</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt"
+                                  <td width="525"><input class="form-control col-sm-8" type="text"
                                       id="s11_kewarganegaraan3" name="s11_kewarganegaraan3"></td>
                                 </tr>
                                 <tr>
                                   <td>Agama</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_agama3"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_agama3"
                                       name="s11_agama3"></td>
                                 </tr>
                                 <tr>
                                   <td>Pekerjaan</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_pekerjaan3"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_pekerjaan3"
                                       name="s11_pekerjaan3"></td>
                                 </tr>
                                 <tr>
                                   <td>Alamat</td>
                                   <td>:</td>
-                                  <td width="525"><input class="form-control col-sm-8" type="txt" id="s11_alamat3"
+                                  <td width="525"><input class="form-control col-sm-8" type="text" id="s11_alamat3"
                                       name="s11_alamat3"></td>
                                 </tr>
                               </table>
@@ -669,26 +670,26 @@ $umur = hitung_umur($p_l_tanggal);
                                 <tr>
                                   <td width="200px">Calon suami</td>
                                   <td>:</td>
-                                  <td><input class="form-control col-sm-8" type="txt"
-                                                                id="s11_csuami" name="s11_csuami"></td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_csuami" name="s11_csuami">
+                                  </td>
                                 </tr>
                                 <tr>
                                   <td width="200px">Calon istri</td>
                                   <td>:</td>
-                                  <td><input class="form-control col-sm-8" type="txt"
-                                                                id="s11_cistri" name="s11_cistri"></td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_cistri" name="s11_cistri">
+                                  </td>
                                 </tr>
                                 <tr>
                                   <td width="200px">Hari/Tanggal/Jam</td>
                                   <td>:</td>
-                                  <td><input class="form-control col-sm-8" type="txt"
-                                                                id="s11_hatajam" name="s11_hatajam"></td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_hatajam"
+                                      name="s11_hatajam"></td>
                                 </tr>
                                 <tr>
                                   <td width="200px">Tempat akad nikah</td>
                                   <td>:</td>
-                                  <td><input class="form-control col-sm-8" type="txt"
-                                                                id="s11_tempat_akad" name="s11_tempat_akad"></td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_tempat_akad"
+                                      name="s11_tempat_akad"></td>
                                 </tr>
                               </table>
                               <table width="625">
@@ -871,26 +872,26 @@ $umur = hitung_umur($p_l_tanggal);
                                 <tr>
                                   <td width="200px">Suami</td>
                                   <td>:</td>
-                                  <td><input class="form-control col-sm-8" type="txt"
-                                                                id="s11_suami" name="s11_suami"></td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_suami" name="s11_suami">
+                                  </td>
                                 </tr>
                                 <tr>
                                   <td width="200px">Istri</td>
                                   <td>:</td>
-                                  <td><input class="form-control col-sm-8" type="txt"
-                                                                id="s11_istri" name="s11_istri"></td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_istri" name="s11_istri">
+                                  </td>
                                 </tr>
                                 <tr>
                                   <td width="200px">Tanggal Penetapan</td>
                                   <td>:</td>
-                                  <td><input class="form-control col-sm-8" type="txt"
-                                                                id="s11_tanggal_penetapan" name="s11_tanggal_penetapan"></td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_tanggal_penetapan"
+                                      name="s11_tanggal_penetapan"></td>
                                 </tr>
                                 <tr>
                                   <td width="200px">Pengadilan Agama</td>
                                   <td>:</td>
-                                  <td><input class="form-control col-sm-8" type="txt"
-                                                                id="s11_pengadilan_agama" name="s11_pengadilan_agama"></td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_pengadilan_agama"
+                                      name="s11_pengadilan_agama"></td>
                                 </tr>
                               </table>
                               <table width="625">
@@ -1023,97 +1024,141 @@ $umur = hitung_umur($p_l_tanggal);
                               <table width="625">
                                 <tr>
                                   <td width="20px">A.</td>
-                                  <td width="250px">Calon Suami :</td>
-                                  <td width="450px"></td>
+                                  <td>Calon Suami :</td>
+                                  <td></td>
                                 </tr>
                                 <tr>
                                   <td></td>
                                   <td>1. Nama lengkap dan alias</td>
-                                  <td>: <b>BURSAN</b></td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_csuami2"
+                                      name="s11_csuami2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
                                   <td>2. Bin</td>
-                                  <td>: SADIR</td>
+                                  <td>: </td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_bin_csuami2"
+                                      name="s11_bin_csuami2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
                                   <td>3. Nomor Induk Kependudukan</td>
-                                  <td>: 1311070109810002</td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_nik_csuami2"
+                                      name="s11_nik_csuami2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
-                                  <td>4. Tempat dan Tanggal Lahir</td>
-                                  <td>: Talao, 01 September 1981</td>
+                                  <td>4. Tempat Lahir</td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_tempat_csuami2"
+                                      name="s11_tempat_csuami2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
-                                  <td>5. Kewarganegaraan</td>
-                                  <td>: WNI</td>
+                                  <td>5. Tanggal Lahir</td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_tanggal_csuami2"
+                                      name="s11_tanggal_csuami2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
-                                  <td>6. Agama</td>
-                                  <td>: Islam</td>
+                                  <td>6. Kewarganegaraan</td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_kewarganegaraan_csuami2"
+                                      name="s11_kewarganegaraan_csuami2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
-                                  <td>7. Pekerjaan</td>
-                                  <td>: Wiraswasta</td>
+                                  <td>7. Agama</td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_agama_csuami2"
+                                      name="s11_agama_csuami2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
-                                  <td>8. Alamat</td>
-                                  <td>: Jorong Talao, nagari Talao Sungai Kunyit <br>Kecamatan Sangir Balai Janggo
-                                    <br>Kabupaten Solok Selatan, Provinsi Sumatera Barat</td>
+                                  <td>8. Pekerjaan</td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_pek_csuami2"
+                                      name="s11_pek_csuami2"></td>
+                                </tr>
+                                <tr>
+                                  <td></td>
+                                  <td>9. Alamat</td>
+                                  <td>:</td>
+                                  <td><textarea class="form-control col-sm-8" type="text" id="s11_alamat_csuami2"
+                                      name="s11_alamat_csuami2"> </textarea> </td>
                                 </tr>
                               </table>
                               <table width="625">
                                 <tr>
                                   <td width="20px">B.</td>
-                                  <td width="250px">Calon Istri :</td>
-                                  <td width="450px"></td>
+                                  <td>Calon Istri :</td>
+                                  <td></td>
                                 </tr>
                                 <tr>
                                   <td></td>
                                   <td>1. Nama lengkap dan alias</td>
-                                  <td>: <b>YAHDIANI</b></td>
+                                  <td>: </td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_cistri2"
+                                      name="s11_cistri2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
                                   <td>2. Bin</td>
-                                  <td>: YATNARI</td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_bin_cistri2"
+                                      name="s11_bin_cistri2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
                                   <td>3. Nomor Induk Kependudukan</td>
-                                  <td>: 1311074311820001</td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_nik_cistri2"
+                                      name="s11_nik_cistri2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
-                                  <td>4. Tempat dan Tanggal Lahir</td>
-                                  <td>: Lubuk Malako, 03 November 1982</td>
+                                  <td>4. Tempat Lahir</td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_tempat_cistri2"
+                                      name="s11_tempat_cistri2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
-                                  <td>5. Kewarganegaraan</td>
-                                  <td>: WNI</td>
+                                  <td>5. Tempat dan Tanggal Lahir</td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_tanggal_cistri2"
+                                      name="s11_tanggal_cistri2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
-                                  <td>6. Agama</td>
-                                  <td>: Islam</td>
+                                  <td>6. Kewarganegaraan</td>
+                                  <td>:</td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_kewarganegaraan_cistri2"
+                                      name="s11_kewarganegaraan_cistri2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
-                                  <td>7. Pekerjaan</td>
-                                  <td>: Mengurus Rumah Tangga</td>
+                                  <td>7. Agama</td>
+                                  <td>: </td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_agama_cistri2"
+                                      name="s11_agama_cistri2"></td>
                                 </tr>
                                 <tr>
                                   <td></td>
-                                  <td>8. Alamat</td>
-                                  <td>: Sungai Gading, Nagari Sungai Kunyit Barat <br>Kecamatan Sangir Balai Janggo
-                                    <br>Kabupaten Solok Selatan, Provinsi Sumatera Barat</td>
+                                  <td>8. Pekerjaan</td>
+                                  <td>: </td>
+                                  <td><input class="form-control col-sm-8" type="text" id="s11_pek_cistri2"
+                                      name="s11_pek_cistri2"></td>
+                                </tr>
+                                <tr>
+                                  <td></td>
+                                  <td>9. Alamat</td>
+                                  <td>:</td>
+                                  <td><textarea class="form-control col-sm-8" type="text" id="s11_alamat_cistri2"
+                                      name="s11_alamat_cistri2"> </textarea> </td>
                                 </tr>
                               </table>
                               <table width="700">
@@ -1153,7 +1198,7 @@ $umur = hitung_umur($p_l_tanggal);
 
                             </div>
 
-                    </div>
+                    
                     </center><br><br>
                     <input style="display: none;" type="text" id="s_p_kk" name="s_p_kk" class="form-control col-sm-3"
                       value="<?php echo $p_kk ?>">
@@ -1162,15 +1207,15 @@ $umur = hitung_umur($p_l_tanggal);
                     <input style="display: none;" type="text" id="s_status" name="s_status"
                       class="form-control col-sm-3" value="Dalam Proses">
                     <input style="display: none;" type="text" id="s_title" name="s_title" class="form-control col-sm-3"
-                      value="Surat Keterangan Kepemilikan Ternak">
+                      value="Surat Pengantar Nikah">
                     <input style="display: none;" type="text" id="s_date" name="s_date" class="form-control col-sm-3"
                       value="<?php echo date("d F Y", $d) ?>">
                     <input style="display: none;" type="text" id="s_filepath" name="s_filepath"
-                      class="form-control col-sm-3" value="a_surat_print_10.php">
+                      class="form-control col-sm-3" value="a_surat_print_11.php">
 
 
                     <input style="display:none" type="text" id="notif_message" name="notif_message" class="form-control"
-                      value="Permohonan cetak surat ( Surat Keterangan Kepemilikan Ternak ) sedang di proses oleh operator nagari. Proses akan dilakukan selama 1-2 hari. Terima Kasih"
+                      value="Permohonan cetak surat ( Surat Pengantar Nikah ) sedang di proses oleh operator nagari. Proses akan dilakukan selama 1-2 hari. Terima Kasih"
                       placeholder="...." required>
                     <input style="display:none" type="text" id="notif_title" name="notif_title" class="form-control"
                       value="Permohonan Surat" placeholder="...." required>
